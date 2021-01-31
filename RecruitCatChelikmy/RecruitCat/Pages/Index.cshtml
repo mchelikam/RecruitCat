@@ -1,0 +1,96 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<div style="background-color:#d3e0d8 ; width: 100%; margin: 0px; padding: 0px; ">
+    <div class="text-center">
+        <div class="text-center">
+            <h1 class="display-4">You're on the right track</h1>
+            <p>We'll help you land your dream job or get a job in the company you always dreamed of working for</p>
+            <h3 style="padding-bottom: 20px;"><em>Our <strong>Services</strong></em></h3>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.wraltechwire.com/wp-content/uploads/2019/02/jobs-hiring-help-wanter.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Build your Profile</h5>
+                        <p>Our Profile Builder team will help you with your Resume and LinkedIn profile, so that you stand out of the crowd. You'll be able to land multiple job offers once we work through your profile.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdnimgen.royanews.tv/imageserv/Size728Q40/news/20180718/14692.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Job Search</h5>
+                        <p>Based on your preferences, profile and past experience, we'll provide customized Job Openings list every week. So that you get what you want.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://s3.amazonaws.com/utep-uploads/wp-content/uploads/unr/2020/04/14121448/UNR-MACC-2020-Q1-Skyscraper-Types-of-Accounting-Jobs-header-v2-2-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Learn from Experts</h5>
+                        <p>Our couses are taught by Industry experts who work in prominent roles. Learn from the best and get market ready. </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <br />
+    <div style="text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+        <h3 style="text-align: center; padding:20px"><em>Our <strong>Partners</strong></em></h3>
+        <p>We have collaborated with Industry leaders in IT, Banking and Automobile sectors. Most of our partners prefer our applicants over others as they don't have invest again for skill development. Also, most of the time Job postings are directly sent to us and won't be posted on their website or anyother social media. Join us today to increase your probability of getting a full time role in our partnered companies.</p>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success">IT: Microsoft, Twitter, Cognizant, Amazon, Facebook, Uber</li>
+            <li class="list-group-item list-group-item-info">Banking: American Express, Capital First, Robinhood, Acorn, JP Morgan</li>
+            <li class="list-group-item list-group-item-dark">Automobile: Honda, Nissan, Harley Davidson, Kawasaki, Tesla, </li>
+        </ul>
+    </div>
+    <div style="text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+        <h3 style="text-align: center; padding:40px"><em>Candidate <strong>Testimonials</strong></em></h3>
+        <p>Recruit Cat listened to what I was looking for in a new company and presented opportunities which fit my skillset. They helped in making my Resume tailor-made for the job roles I was interested in.</p>
+        <p><strong>"Chris Evans"</strong></p>
+        <p><em>Software Developer, Alexa Team</em></p>
+        <hr />
+        <p>Before joining Recruit Cat, I hardly got any interview calls. They're Industry oriented courses which are taught by experts enhanced my skills. I currently work as a Design specialist for Honda Automobiles.</p>
+        <p><strong>"Robert Downey Jr"</strong></p>
+        <p><em>Design Specialist, Honda Automobiles</em></p>
+        <hr />
+        <p>When I was trying to make a switch, I struggled to know information about Job postings and get any referrals. After joining Recruit Cat there sent list of Job openings every week which solved my problem</p>
+        <p><strong>"Scarlett Johansson"</strong></p>
+        <p><em>Senior Consultant, AMEX</em></p>
+    </div>
+
+    <div style="text-align: center; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+        <h3 style="padding:40px"><em><strong>Apply Today!</strong></em></h3>
+        <p>All interested folks can join us today. Follow these few simple steps and begin your path towards success </p>
+
+        <ul class="list-group" style="background-color:#d3e0d8; width: 40%; margin:auto; padding-bottom:20px">
+            <li class="list-group-item">1. Sign Up with your Email ID or Mobile number</li>
+            <li class="list-group-item">2. Login to your Account</li>
+            <li class="list-group-item">3. Decide which services you require from us</li>
+            <li class="list-group-item">4. Answer a small questionaire about youself, plans and past experince</li>
+            <li class="list-group-item">5. Pay a nominal fee for enrollment</li>
+            <li class="list-group-item">6. Our Specialist will contact you within a Business Working day</li>
+        </ul>
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+        <p style="padding:20px;">*Have any questions for us? Still in Dilemma? We're happy to assist, Contact us over Phone or Visit us at our office</p>
+    </div>
+    
+</div>
