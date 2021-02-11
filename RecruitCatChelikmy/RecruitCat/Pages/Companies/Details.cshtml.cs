@@ -29,6 +29,7 @@ namespace RecruitCat.Pages.Companies
             }
 
             Company = await _context.Company
+                .Include(x=>x.Candidates)
                 .Include(c => c.Industry).FirstOrDefaultAsync(m => m.Id == id);
 
             if (Company == null)

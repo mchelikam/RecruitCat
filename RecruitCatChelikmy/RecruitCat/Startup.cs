@@ -9,6 +9,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RecruitCat.Data;
+using Gtt.Uc.EntityFramework;
+
 
 namespace RecruitCat
 {
@@ -26,8 +28,9 @@ namespace RecruitCat
         {
             services.AddRazorPages();
 
-            services.AddDbContext<RecruitCatContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("RecruitCatContext")));
+            //services.AddDbContext<RecruitCatContext>(options =>
+            // options.UseSqlServer(Configuration.GetConnectionString("RecruitCatContext")));
+            services.AddGttMem<RecruitCatContext> ("1b7e77d1-5e5b-4a10-9d95-355d6dac03b9");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
